@@ -1,0 +1,173 @@
+@media only screen and (max-width: 1246px) {
+    /*form*/
+    .Form form{
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+   .myForm {
+ 
+     display: flex;
+     flex-direction: column;
+        width:  90%;
+        padding: 0px;
+        margin: 0px;
+ 
+   }
+
+
+   .myForm fieldset{
+    border: 1px solid #ccc;
+    
+    width: 100%;
+   }
+   .myForm > input, 
+   .myForm > select,
+   .myForm > textarea,
+   .myForm > button
+    {
+     grid-column: controls;
+     grid-row: auto;
+     padding: .4em;
+     border: 0;
+     border: 1px solid #ccc;
+     width: 100%;
+     
+   }
+   .myForm > fieldset {
+     grid-column: span 2;
+   }  
+   .myForm > button {
+    
+     color: rgb(26, 26, 26);
+     }
+   .myForm > textarea {
+     min-height: 3em;
+     }
+
+     .delivery_address,
+     .hide{
+        display: none;
+     }
+
+    .myForm p{
+        grid-column: span 2
+    }
+
+
+    /*cover start*/
+    .cover img{
+    margin: 0px;
+
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    object-fit: cover; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    height: 400px;
+    width: 100%;
+    }
+
+    .cover h1{
+        
+        top:28svh;
+        color:rgb(255, 255, 255);
+        margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+
+    }
+    .cover span{
+        margin-left: 0px; 
+        color: white;
+    }
+    .cover p{
+    position: relative;
+    top: 0;
+    right:0;
+    margin: 20px;
+    text-align: center;
+    }
+    /*cover end*/
+    /*about me start*/
+    /*achievements*/
+    .container{
+       
+    flex-direction: column;
+    }
+    .listcontainer{
+        text-align: center;
+    }
+    .imgcontainer{
+        justify-content: center;
+    }
+    .lower, .listcontainer ul{
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+
+        .academic h2{
+            font-size: 10vw;
+        }  
+
+
+  }
+
+  @media only screen and (max-width: 240px) {
+    /*fav*/
+.img, .hanoi p, .title, .demolist, .listcontainer
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    .fav, .title, .demolist{
+        font-size: 12vw;
+    }
+
+    .demolist{
+        text-align: center;
+    }
+
+
+    .cover h1{
+        font-size: 2rem;
+        top:40svh;
+    }
+
+
+
+
+}
+
+  @media only screen and (max-width: 200px) {
+
+.cover h1{
+    font-size: 1.5rem;
+}
+/*footer*/
+.footcontainer{
+    
+    flex-direction: column;
+}
+
+footer span{
+    
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+
+
+}
+
+footer ul{
+   
+    text-align: center;
+    margin-right: 0px;
+
+}
+
+}

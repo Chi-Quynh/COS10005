@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style/StylePC.css">
+  <link rel="stylesheet" href="style/StyleMobile.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<script src="js/script.js"></script>
+
+</head>
+<body>
+  <!--navigation bar start-->  
+  <header class="content">
+           
+    <!--<a href="main.html" class="Logo">Home icon</a>-->
+    <ul> 
+        <li><a href="index.html">Index</a><hr ></li>
+        <li><a href="order.html">Order</a><hr></li>
+        <li ><a href="registration.html">Register</a><hr id="selected"></li>
+        <li><a href="enhance.html">Enhancement</a><hr></li>
+    </ul>
+</header>
+<!--navigation bar end-->
+<!--profile-->
+<section class="cover">
+  <img src="img/pexels-rakicevic-nenad-1262302.jpg" alt="Sweet Life Ice Cream shop">
+  <h1>Sweet Life</h1>
+  
+  <!--<p>Sweet as sunshine, soft as clouds</p>-->
+</section>
+  <!--form-->
+  <h2 class="title">Register Now</h2>
+  <div class="Form" >
+  <form id="registerform" class="myForm" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" method="post" > 
+  
+    
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username"  >
+
+  
+  
+    <label for="password" >Password:</label>
+    <input type="password" name="password" id="password"  >
+
+    
+    <label for="email" >Email:</label>
+    <input type="email" name="email" id="email" >
+
+    
+    
+    <fieldset>
+      <legend>Gender:</legend>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+    </fieldset>
+  
+
+  
+    <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+  
+      <label for="icecream">Favourite Ice-cream:</label>
+    <select name="icecream" id="icecream" >
+      <option  value="">Select...</option>
+      <option value="chocolate">Chocolate</option>
+      <option value="vanilla">Vanilla</option>
+      <option value="strawberry">Strawberry</option>
+      <option value="other">Other</option>
+    </select>
+  
+    <datalist id="user_intro_list">
+      <option value="Facebook">
+      <option value="Instagram">
+      <option value="Friends">
+  
+    </datalist>
+  
+    
+    
+  
+  
+  
+    <label for="user_intro">Where did you heard from us?</label >
+    <input list="user_intro_list" name="user_intro" id="user_intro"  >
+  
+  <label for="news"> <input type="checkbox" id="news" name="news" value="keeps"> Keep me updated on news</label>
+  <br>
+  
+  <input type="submit" value="Register">
+     
+  
+  
+  </form>
+  
+  </div>
+<!--action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" method="post" -->
+<footer class="footer">
+  <div class="footcontainer">
+
+  
+  <span>@lilypatch</span>
+  <ul > 
+      
+      <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" rel="nofollow">Behance</a></li>
+      <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" rel="nofollow">Email</a></li>
+      <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" rel="nofollow">Instagram</a></li>
+  </ul>
+</div>
+</footer>
+</body>
+</html>

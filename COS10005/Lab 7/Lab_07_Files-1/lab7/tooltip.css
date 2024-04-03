@@ -1,0 +1,39 @@
+/* Style the tooltip box
+*/
+.tooltip {						/* apply style to HTML elements having a tooltip as class name */
+	display						: none;				/* tool tips are initially not visible */
+	position					: relative;		/* place tooltip according to the order in the HTML */
+	background-color	: lightblue;	/* uses a lightblue background */
+	border-radius			: 5px;				/* create a rounded corner */
+	text-align				: center;			/* center text inside the tooltip */
+	padding						: 5px;				/* add a 5px spacing around the text */
+	left							: 1em;				/* moves the only tooltip to right */
+}
+.tooltip:after {			/* apply style to the text that is appended to the tooltip */
+	position						: absolute;		/* set an absolute position be specified (default is after) */
+	top								: 10px;				/* specify the position */
+	border-style					: solid;
+	height							: 0;
+	width							: 0;
+}
+
+.tooltip {
+  display: none; /* Tool tips are initially not visible */
+  position: relative; /* Place tooltip according to the order in the HTML */
+  background-color: blue; /* Uses a blue background */
+  border-radius: 5px; /* Create a rounded corner */
+  text-align: center; /* Center text inside the tooltip */
+  padding: 5px; /* Add a 5px spacing around the text */
+  left: 1em; /* Position the tooltip at 1em from the left */
+}
+
+.tooltip:after {
+  position: absolute; /* Set an absolute position (default is after) */
+  top: 10px; /* Specify the absolute top position */
+  border-style: solid; /* Specify solid border style */
+  border-width: 5px; /* Specify a border width */
+  border-color: transparent blue transparent transparent; /* Create a triangle-shaped arrow for the tooltip */
+  content: ""; /* Create an empty content for the arrow shape */
+  height: 0; /* Set height to 0px */
+  width: 0; /* Set width to 0px */
+}

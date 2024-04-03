@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Swinburne COS10005">
+    <link rel="stylesheet" href="style/StylePC.css">
+    <link rel="stylesheet" href="style/StyleMobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<script src="js/script.js"></script>
+<title>Quynh Chi About Me COS10005</title>
+</head>
+<body>
+
+      <!--navigation bar start-->  
+        <header class="content">
+           
+                <!--<a href="main.html" class="Logo">Home icon</a>-->
+                <ul> 
+                    <li><a href="index.html">Index</a><hr id="selected"></li>
+                    <li><a href="order.html">Order</a><hr></li>
+                    <li ><a href="registration.html">Register</a><hr ></li>
+                    <li><a href="enhance.html">Enhancement</a><hr></li>
+                    <li><a href='#'><i id="shopcart" class="fas fa-shopping-cart fa-2x"></i><span id="cart">0</span></a></li>
+                   <script>cartitem();</script>
+                </ul>
+        </header>
+
+
+        
+    <!--navigation bar end-->
+<!--profile-->
+<section class="cover">
+    <img src="img/pexels-rakicevic-nenad-1262302.jpg" alt="Sweet Life Ice Cream shop">
+    <h1>Sweet Life</h1>
+    
+    <!--<p>Sweet as sunshine, soft as clouds</p>-->
+</section>
+
+
+
+<section >
+    <h2 class="title">Menu</h2>
+    
+    <div class="imgcontainer">
+    <div class="img" id="stawberry" ><img src="img/Strawberry-Ice-Cream-No-Churn_3b.webp" alt="Stawberry Flavour" ><p class="light" >Tarty, Creamy, Fruity  </p ><hr><p class="bold">Stawberry</p><p class="bold">1.5$</p><button type="button" onclick="AddCart(`stawberry`)" class="addcart">Add to cart</button></div>
+    <div class="img" id="vanila" data-name="vanilla"><img src="img/Vanila.webp" alt="Vanila Flavour"><p  class="light"  >Creamy, Clean, Buttery</p><hr><p class="bold">Vanila</p><p class="bold">2.5$</p>
+        <button type="button"  class="addcart" onclick="AddCart(`vanila`)">Add to cart</button>
+    
+    </div>
+    <div class="img" ><img src="img/Chocolate-IceCream.webp" alt="Chocolate Flavour"><p class="light"  >Rich, Decadent, Smooth, Creamy</p><hr><p class="bold">Chocolate</p><p class="bold">2.5$</p>
+        <button type="button" onclick="AddCart(`chocolate`)" class="addcart">Add to cart</button></div>
+    <div class="img" ><img src="img/Matcha-Ice-Cream-22.jpg" alt="Matcha Flavour"><p class="light" >Earthly, Slightly Bitter, Subtly Sweet</p><hr><p class="bold">Matcha</p><p class="bold">3.0$</p>
+        <button type="button" onclick="AddCart(`matcha`)" class="addcart">Add to cart</button></div>
+    
+
+    </div>
+</section>
+
+
+ <!-- Modal -->
+
+  
+
+
+
+
+
+<!--footer end-->
+
+<footer class="footer">
+    <div class="footcontainer">
+
+    
+    <span>@lilypatch</span>
+    <ul > 
+        
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" rel="nofollow">Behance</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" rel="nofollow">Email</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" rel="nofollow">Instagram</a></li>
+    </ul>
+</div>
+</footer>
+<!--footer end-->
+</body>
+</html>
